@@ -1,0 +1,10 @@
+<div class="bottom-sheet" [class.visible]="isVisible">
+  <div class="bottom-sheet-content">
+    <ng-content></ng-content>
+  </div>
+  <button class="close-button" (click)="close()">Close</button>
+</div>
+
+<button class="toggle-button" (click)="toggleVisibility()">
+  Toggle Bottom Sheet
+</button>
