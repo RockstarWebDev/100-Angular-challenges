@@ -1,5 +1,4 @@
-<h2>Bottom Sheet Example</h2>
-<app-bottom-sheet>
-  <p>This is dynamic content inside the bottom sheet!</p>
-  <p>You can add any content here, like forms or additional information</p>
-</app-bottom-sheet>
+<app-button-toggle
+  [options]="buttonOptions"
+  (selectionChange)="onSelectionChanges($event)"
+></app-button-toggle>

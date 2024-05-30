@@ -1,0 +1,9 @@
+<div class="button-group">
+  <button
+    *ngFor="let option of options"
+    [class.selected]="option === selectedOption"
+    (click)="onSelect(option)"
+  >
+    {{ option }}
+  </button>
+</div>
