@@ -6,4 +6,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = '100-Angular-challenges';
+
+  buttonOptions = ['option1', 'option2', 'option3'];
+
+  onSelectionChanges(selectedOption: string): void {
+    console.log('Selected option', selectedOption);
+  }
 }
