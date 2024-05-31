@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,6 +6,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = '100-Angular-challenges';
+
 
   labels: string[] = ['Angular', 'React', 'Vue', 'Svelte'];
   selectedFilter: string[] = [];
@@ -18,5 +18,4 @@ export class AppComponent {
       this.selectedFilter.push(label);
     }
     console.log('Selected pill', this.selectedFilter);
-  }
 }
