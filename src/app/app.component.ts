@@ -7,9 +7,15 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = '100-Angular-challenges';
 
-  buttonOptions = ['option1', 'option2', 'option3'];
 
-  onSelectionChanges(selectedOption: string): void {
-    console.log('Selected option', selectedOption);
-  }
+  labels: string[] = ['Angular', 'React', 'Vue', 'Svelte'];
+  selectedFilter: string[] = [];
+
+  onFilterSelected(label: string): void {
+    if (this.selectedFilter.includes(label)) {
+      this.selectedFilter = this.selectedFilter.filter((f) => f !== label);
+    } else {
+      this.selectedFilter.push(label);
+    }
+    console.log('Selected pill', this.selectedFilter);
 }
