@@ -1,0 +1,8 @@
+<div *ngFor="let content of contents; let i = index">
+  <div class="accordion-title" (click)="toggleAccordion(i)">
+    {{ content.title }}
+  </div>
+  <div class="accordion-content" [ngClass]="{ open: content.isOpen }">
+    {{ content.content }}
+  </div>
+</div>
