@@ -1,0 +1,8 @@
+<div>
+  <input [formControl]="searchControl" placeholder="Search..." />
+</div>
+<ul>
+  <li *ngFor="let item of items | filterTerm : searchTerm">
+    {{ item }}
+  </li>
+</ul>
