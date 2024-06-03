@@ -1,0 +1,10 @@
+<div class="pill-container">
+  <span
+    *ngFor="let label of labels"
+    class="pill"
+    [ngClass]="{ selected: isSelected(label) }"
+    (click)="onPillClick(label)"
+  >
+    {{ label }}
+  </span>
+</div>

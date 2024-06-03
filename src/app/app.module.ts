@@ -8,6 +8,14 @@ import { SearchListComponent } from './search-list/search-list.component';
 @NgModule({
   declarations: [AppComponent, FilterTermPipe, SearchListComponent],
   imports: [BrowserModule, FormsModule, ReactiveFormsModule],
+
+@NgModule({
+  declarations: [
+    AppComponent,
+  ],
+  imports: [
+    BrowserModule
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
